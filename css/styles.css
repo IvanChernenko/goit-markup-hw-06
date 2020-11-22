@@ -417,9 +417,14 @@ address {
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
   max-width: 528px;
+  height: 581px;
   background-color: var(--white);
   padding-top: 40px;
   padding-bottom: 40px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   transition: transform 0.5s;
 }
@@ -812,6 +817,16 @@ address {
   cursor: pointer;
 }
 
+.submit-input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+
 .button-submit {
   margin-left: 12px;
   display: flex;
@@ -1013,13 +1028,25 @@ textarea {
 }
 
 .form-field {
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
+
+.form-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: var(--main-text-cl);
+}
 .form-input {
   margin: 0;
+  height: 40px;
   padding-left: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1044,9 +1071,18 @@ textarea {
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 42px;
+  top: 31px;
   left: 15px;
   z-index: 2;
+}
+
+.label-comment {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--main-text-cl);
 }
 
 .comment {
