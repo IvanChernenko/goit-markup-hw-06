@@ -901,16 +901,13 @@ address {
   position: relative;
 }
 
-.prtf:hover p,
-.prtf:hover::after {
+.prtf-link:hover .prtf-p,
+.prtf-link:hover .prtf::after,
+.prtf-link:focus .prtf-p,
+.prtf-link:focus .prtf::after {
   transform: translateY(0%);
   opacity: 1;
-}
-
-.prtf:focus p,
-.prtf:focus::after {
-  transform: translateY(0%);
-  opacity: 1;
+  height: 100%;
 }
 
 .prtf::after {
@@ -919,7 +916,7 @@ address {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 0;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
