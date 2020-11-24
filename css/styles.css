@@ -71,6 +71,8 @@ address {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+  min-width: 1600px;
+  min-height: 80px;
 }
 
 .header-border {
