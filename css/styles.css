@@ -695,6 +695,7 @@ address {
 }
 
 .join {
+  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -731,13 +732,20 @@ address {
 .submit {
   padding-top: 12px;
   margin-left: 93px;
+  display: block;
+  align-items: column;
 }
 
-.submit-list {
-  display: inline-flex;
+.submit-item {
+  display: flex;
 }
 
-.submit-item input::placeholder {
+.submit-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.submit-input::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -745,7 +753,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.submit-item input {
+.submit-input {
   background-color: var(--dark-bg);
   margin: 0;
   width: 358px;
