@@ -85,10 +85,6 @@ address {
 }
 
 .header-container {
-  margin: 0 auto;
-  padding-right: 215px;
-  padding-left: 215px;
-  width: 1600px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
